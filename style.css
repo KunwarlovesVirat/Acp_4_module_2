@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff4f8;
+  padding: 30px;
+}
+h1 {
+  color: #d94f70;
+}
+h1 + p {
+  color: #666;
+  font-size: 18px;
+}
+.flavours {
+  padding: 0;
+}
+.flavours > li {
+  list-style: none;
+  background-color: white;
+  padding: 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+/* Each flavour turns orange separately */
+.flavours > li:hover {
+  background-color: orange;
+  color: white;
+  transform: translateX(10px);
+}
+/* nth-child selector */
+.flavours > li:nth-child(3) {
+  font-weight: bold;
+}
+/* First-letter selector */
+.description::first-letter {
+  font-size: 35px;
+  font-weight: bold;
+}
+/* Button hover */
+button:hover {
+  background-color: orange;
+  color: white;
+  cursor: pointer;}
